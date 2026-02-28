@@ -1,7 +1,7 @@
 # -----------------------------------------------------
 # Stage 1: Build Java/Scala components (pdffigures2)
 # -----------------------------------------------------
-FROM openjdk:11-jdk-slim AS builder
+FROM eclipse-temurin:11-jdk AS builder
 
 # 1. Install build dependencies (including sbt and git)
 RUN apt-get update && apt-get install -y \
